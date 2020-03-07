@@ -4,13 +4,12 @@
 
 
 function verificar_estado(){
-        $out = shell_exec('sh verificar_estado.sh');
+        $out = shell_exec('sh accion.sh info');
         return $out;
 }
 
 $id=$_GET['id'];
 $accion=$_GET['accion'];
-#echo  $accion;
 if ( $id == "a666" )
 	{
 	if ( $accion == "on" ) 
